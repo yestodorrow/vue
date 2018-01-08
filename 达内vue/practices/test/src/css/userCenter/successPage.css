@@ -1,0 +1,61 @@
+.userSetBox {
+    width: 100%;
+    height: auto;
+}
+.userSetBox .userSetTitle {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+.userSetBox .userSetTitle span {
+    display: inline-block;
+    width: 28%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+.userSetBox .userSetTitle span{
+    background: url(../../img/icon/iconList2.png) no-repeat;
+}
+.userSetBox .userSetTitle span:first-child {
+    color: #000;
+    background-position:  0px -8px;
+}
+.userSetBox .userSetTitle span:nth-child(2) {
+    color: #000;
+    background-position: 0px -115px;
+}
+.userSetBox .userSetTitle span:last-child {
+    color: #fff;
+    background-position:  0px -283px;
+}
+.myAccount .successEmail {
+    width: 100%;
+    margin-top: 90px;
+    text-align: center;
+    text-align: -webkit-center;
+    position: relative;
+    height: 560px;
+}
+.myAccount .successEmail .successMessage {
+    letter-spacing: 2px;
+}
+.myAccount .successEmail #returnIndex,#returnUserCenter {
+    width: 15%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    letter-spacing: 2px;
+    position: relative;
+    background-color: #F57D07;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin: 30px;
+}

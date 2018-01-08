@@ -1,0 +1,104 @@
+.userSetBox {
+    width: 100%;
+    height: 700px;
+}
+.userSetBox .userSetTitle {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+.userSetBox .userSetTitle span {
+    display: inline-block;
+    width: 28%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+.userSetBox .userSetTitle span{
+    background: url(../../img/icon/iconList2.png) no-repeat;
+}
+.userSetBox .userSetTitle span:first-child {
+    background-position:  0px -172px;
+    color: #fff;
+}
+.userSetBox .userSetTitle span:nth-child(2) {
+    background-position:  0px -57px;
+}
+.userSetBox .userSetTitle span:last-child {
+    background-position:  0px -115px;
+}
+.myAccount .userSetBox>.userSetTitle>.passImgF {
+    color: #000;
+    background-position:  0px -8px;
+}
+.myAccount .userSetBox>.userSetTitle>.passImgS {
+    color: #fff;
+    background-position: 0px -223px;
+}
+.myAccount .userSetBox>.userSetTitle>.passImgT {
+    color: #fff;
+    background-position:  0px -283px;
+}
+.userSetBox .emailAddBox,.userSetBox .sendEmail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 90px;
+    text-align: center;
+    text-align: -webkit-center;
+    position: relative;
+}
+.userSetBox .sendEmail .emailCode span,
+.userSetBox .sendEmail .emailCode a{
+    letter-spacing: 1px;
+    padding: 10px;
+}
+.userSetBox .emailAddBox #emailAdd {
+    width: 30%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    background-color: #F4F4F4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.userSetBox .emailAddBox #emailAdd:focus {
+    outline: medium;
+    border: 1px solid #F57D07;
+}
+.userSetBox .emailAddBox .errorMsg  {
+    display: none;
+    position: absolute;
+    left: 35%;
+    top: 70%;
+    letter-spacing: 2px;
+    color: #F57D07;
+}
+.userSetBox .emailAddBox #verificationEmail,
+.userSetBox .sendEmail #sendAgain {
+    width: 30%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    letter-spacing: 2px;
+    position: relative;
+    top: 55px;
+    background-color: #F57D07;
+    border: none;
+    border-radius: 5px;
+    outline:none;
+    margin: 0 auto;
+}
+.userSetBox .sendEmail #sendAgain {
+    color: #fff;
+    background-color: #FFA248;
+    cursor: pointer;
+}

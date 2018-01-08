@@ -1,0 +1,89 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.5
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly loadAllDepsIntoIdealTree Finishing
+20 silly loadIdealTree Finishing
+21 silly currentTree 110501
+22 silly idealTree 110501
+23 silly generateActionsToTake Starting
+24 silly install generateActionsToTake
+25 silly generateActionsToTake Finishing
+26 silly diffTrees action count 0
+27 silly decomposeActions action count 0
+28 silly runTopLevelLifecycles Starting
+29 silly install runPreinstallTopLevelLifecycles
+30 silly preinstall 110501 F:\vue\110501\110501-dbce1a9e
+31 info lifecycle undefined~preinstall: undefined
+32 silly lifecycle undefined~preinstall: no script for preinstall, continuing
+33 silly executeActions Starting
+34 silly install executeActions
+35 silly doSerial global-install 0
+36 silly doParallel fetch 0
+37 verbose correctMkdir C:\Program Files\nodejs\node_cache\_locks correctMkdir not in flight; initializing
+38 warn locking Error: EPERM: operation not permitted, open 'C:\Program Files\nodejs\node_cache\_locks\staging-5e8d17a33602d603.lock'
+38 warn locking     at Error (native)
+38 warn locking  C:\Program Files\nodejs\node_cache\_locks\staging-5e8d17a33602d603.lock failed { Error: EPERM: operation not permitted, open 'C:\Program Files\nodejs\node_cache\_locks\staging-5e8d17a33602d603.lock'
+38 warn locking     at Error (native)
+38 warn locking   errno: -4048,
+38 warn locking   code: 'EPERM',
+38 warn locking   syscall: 'open',
+38 warn locking   path: 'C:\\Program Files\\nodejs\\node_cache\\_locks\\staging-5e8d17a33602d603.lock' }
+39 silly rollbackFailedOptional Starting
+40 silly rollbackFailedOptional Finishing
+41 silly runTopLevelLifecycles Finishing
+42 silly install printInstalled
+43 warn enoent ENOENT: no such file or directory, open 'F:\vue\110501\package.json'
+44 verbose enoent ENOENT: no such file or directory, open 'F:\vue\110501\package.json'
+44 verbose enoent This is most likely not a problem with npm itself
+44 verbose enoent and is related to npm not being able to find a file.
+45 warn 110501 No description
+46 verbose If you need help, you may report this error at:
+46 verbose     <https://github.com/npm/npm/issues>
+47 warn 110501 No repository field.
+48 verbose If you need help, you may report this error at:
+48 verbose     <https://github.com/npm/npm/issues>
+49 warn 110501 No README data
+50 verbose If you need help, you may report this error at:
+50 verbose     <https://github.com/npm/npm/issues>
+51 warn 110501 No license field.
+52 verbose If you need help, you may report this error at:
+52 verbose     <https://github.com/npm/npm/issues>
+53 verbose stack Error: EPERM: operation not permitted, open 'C:\Program Files\nodejs\node_cache\_locks\staging-5e8d17a33602d603.lock'
+53 verbose stack     at Error (native)
+54 verbose cwd F:\vue\110501
+55 error Windows_NT 10.0.10586
+56 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+57 error node v6.9.5
+58 error npm  v3.10.10
+59 error path C:\Program Files\nodejs\node_cache\_locks\staging-5e8d17a33602d603.lock
+60 error code EPERM
+61 error errno -4048
+62 error syscall open
+63 error Error: EPERM: operation not permitted, open 'C:\Program Files\nodejs\node_cache\_locks\staging-5e8d17a33602d603.lock'
+63 error     at Error (native)
+63 error  { Error: EPERM: operation not permitted, open 'C:\Program Files\nodejs\node_cache\_locks\staging-5e8d17a33602d603.lock'
+63 error     at Error (native)
+63 error   errno: -4048,
+63 error   code: 'EPERM',
+63 error   syscall: 'open',
+63 error   path: 'C:\\Program Files\\nodejs\\node_cache\\_locks\\staging-5e8d17a33602d603.lock' }
+64 error Please try running this command again as root/Administrator.
+65 verbose exit [ -4048, true ]

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/0105/gulp/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/0108/HLTV-master/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/0108/element-starter-master/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/0108/hltv-test/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/0108/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/1128/helloworld/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/1204/els/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/1226/sell/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/douban/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/music/music-player/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/达内vue/practices/test/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/达内vue/practices/vue-jwt-demo/node_modules" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

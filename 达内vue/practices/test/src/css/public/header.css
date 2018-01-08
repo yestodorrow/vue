@@ -1,0 +1,97 @@
+.mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  filter: alpha(opacity=50);
+  opacity: .5;
+  -moz-opacity: .5;
+  z-index: 200;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+}
+
+.dialog {
+  position: fixed;
+  left: 45%;
+  top: 40%;
+  z-index: 300;
+  background-color: #fff;
+  width: 340px;
+  height: 170px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  border-radius: 5px;
+  outline: 0;
+  border: 2px solid #F57D09;
+}
+
+.dialogTitle {
+  text-align: center;
+  line-height: 20px;
+  padding: 10px;
+  letter-spacing: 1px;
+  background-color: #F57D09;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dialogContent {
+  padding: 15px 10px 10px 10px;
+  text-align: center;
+  position: relative;
+}
+
+.dialogContent .dialogMsg {
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.dialogContent::after {
+  content: ".";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  height: 0;
+}
+
+  .dialogContent {
+  zoom: 1;
+}
+
+.dialogBtn {
+  text-align: center;
+  padding: 10px;
+
+}
+
+.dialogBtn .dialogSure, .dialogBtn .dialogCancel {
+  width: 30%;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  letter-spacing: 2px;
+  position: relative;
+  background-color: #F57D09;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dialogBtn .dialogSure {
+  margin-right: 20px;
+}
+
+.dialogBtn .dialogCancel {
+  margin-left: 20px;
+}

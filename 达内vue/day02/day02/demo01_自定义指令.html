@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>s</title>
+</head>
+<body>
+<script src="js/vue.js"></script>
+<div id="container">
+    <my-component></my-component>
+
+</div>
+<script>
+    Vue.component("my-component",{
+        data:function(){
+            return{
+                myAddress:"",
+                myPhone:123
+            }
+        },
+        template:`
+            <div>
+            <input type="text" v-model="myAddress"/>
+            <input type="text" v-model="myPhone"/>
+            <p>{{myAddress}}</p>
+            </div>
+        `,
+    watch:{
+        myAddress:function(){
+            console.log("Address has changed");
+        },
+        myPhone:function(){
+            console.log(this.myPhone);
+        }
+    }
+    })
+
+
+    new Vue({
+        el:"#container",
+        data:{
+            msg:"hello vue"
+        }
+    })
+</script>
+</body>
+</html>
