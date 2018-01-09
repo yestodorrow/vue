@@ -5,9 +5,12 @@
       <excludeFolder url="file://$MODULE_DIR$/0105/gulp/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/0108/HLTV-master/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/0108/element-starter-master/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/0108/hltv-test/CSGOScoreBot/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/0108/hltv-test/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/0108/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/0109/hltv-api-master/demo-app/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/1128/helloworld/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/1128/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/1204/els/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/1226/sell/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/douban/node_modules" />

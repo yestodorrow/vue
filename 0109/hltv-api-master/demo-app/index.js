@@ -1,23 +1,29 @@
-import express from 'express';
-import { getNews, getResults, getMatches } from '../src/index';
+const fs=require("fs");
+console.log(fs);
 
+
+const express = require('express');
+const HLTV = require('hltv-api');
 const app = express();
 
-app.get('/', (req, res) => {
-  getNews(news => res.json(news));
+app.get('/', function(req, res) {
+  HLTV.getNews(function(news) {
+    return res.json(news);
+  });
 });
 
-app.get('/results', (req, res) => {
-  getResults(results => res.json(results));
+app.get('/results', function(req, res) {
+  HLTV.getResults(function(results) {
+    console.log(results);
+  });
 });
 
-app.get('/:matchId(*)', (req, res) => {
-  const { matchId } = req.params;
-  getMatches(matchId, (stats) => res.json(stats));
+app.get('/:matchId(*)', function(req, res) {
+  HLTV.getMatches(matchId, function(stats) {
+    return res.json(stats);
+  });
 });
 
-const PORT = 3000;
-
-app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}...`); // eslint-disable-line no-console
+app.listen(3000, function() {
+  console.log('Listening on port 3000...');
 });
