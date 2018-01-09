@@ -1,0 +1,63 @@
+{
+  "name": "hltv-api",
+  "version": "1.2.1",
+  "description": "API from Hltv.org",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "cover": "nyc --reporter=lcov npm t",
+    "lint": "eslint ./src",
+    "pretest": "npm run lint",
+    "test": "nyc mocha src/index.test.js --require babel-register",
+    "test:w": "npm t -- -w",
+    "prebuild": "rimraf dist",
+    "build": "babel --copy-files --out-dir dist --ignore *.test.js src",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dajk/hltv-api.git"
+  },
+  "keywords": [
+    "Hltv.org",
+    "API"
+  ],
+  "author": "Radovan Hajdukovic <hajdukovic.radovan@gmail.com> (https://at.linkedin.com/in/radovan-hajdukovic-a2004984)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dajk/hltv-api/issues"
+  },
+  "homepage": "https://github.com/dajk/hltv-api#readme",
+  "dependencies": {
+    "cheerio": "1.0.0-rc.2",
+    "request": "^2.81.0",
+    "xml2js": "^0.4.17"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "chai": "^4.1.2",
+    "codecov": "^3.0.0",
+    "eslint": "4.11.0",
+    "mocha": "^4.0.1",
+    "nyc": "^11.2.1",
+    "rimraf": "^2.6.1",
+    "semantic-release": "^8.2.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"
+    ]
+  }
+}
